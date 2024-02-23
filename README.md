@@ -1,31 +1,27 @@
+# Restaurant API
 
-Restaurant API
 The Restaurant API allows users to perform CRUD operations on restaurants. Users can create, read, update, and delete restaurant data. Additionally, the API provides endpoints to retrieve restaurants near a location within a specified radius and within a specified distance range.
 
-Installation
-Clone the repository:
-bash
-Copy code
+## Installation
+
+### Clone the repository:
+
+```bash
 git clone https://github.com/your-username/restaurant-api.git
-Install dependencies:
-bash
-Copy code
-cd restaurant-api
+
+
+### Install dependencies:
 npm install
-Set up environment variables:
-Create a .env file in the root directory
-Add the following environment variables:
-makefile
-Copy code
-PORT=3000
+
+### Add environment variables
+PORT=5000
 MONGODB_URI=your-mongodb-uri
-SECRET_KEY=your-secret-key
-Usage
-Start the server:
-sql
-Copy code
+JWT_SECRET=your-secret-key
+
+### Start the server
 npm start
-Use Postman or any other HTTP client to make requests to the API endpoints.
+
+### Use Postman or any other HTTP client to make requests to the API endpoints.
 Endpoints
 POST /restaurants: Create a new restaurant.
 GET /restaurants: Get all restaurants.
@@ -33,3 +29,7 @@ GET /restaurants/nearby: Get restaurants near a location within a specified radi
 GET /restaurants/range: Get restaurants within a specified distance range.
 PUT /restaurants/:id: Update a restaurant by ID.
 DELETE /restaurants/:id: Delete a restaurant by ID.
+
+# This is below hosted link of backend, just make request using this link by adding above routes in it.
+## Base Url : https://osos-j5ru.onrender.com
+Example :https://osos-j5ru.onrender.com/api/restaurants/   request : get 
